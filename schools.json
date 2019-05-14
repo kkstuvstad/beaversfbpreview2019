@@ -1,0 +1,161 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature",
+  "properties": {
+    "NAME": "OKLAHOMA STATE UNIVERSITY",
+    "SCHOOLID": 0,
+    "lat": 36.125660,
+    "long": -97.066491
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.066491, 36.125660]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF HAWAII",
+    "SCHOOLID": 1,
+    "lat": 21.372649,
+    "long": -157.929821
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-157.929821, 21.372649]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "CALIFORNIA POLYTECHNIC STATE UNIVERSITY",
+    "SCHOOLID": 2,
+    "lat": 35.298447,
+    "long": -120.665000
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-120.665000, 35.298447]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "STANFORD UNIVERSITY",
+    "SCHOOLID": 3,
+    "lat": 37.434532,
+    "long": -122.161132
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-122.161132, 37.434532]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF CALIFORNIA, LOS ANGELES",
+    "SCHOOLID": 4,
+    "lat": 34.161334,
+    "long": -118.167650
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-118.167650, 34.161334]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF UTAH",
+    "SCHOOLID": 5,
+    "lat": 40.760012,
+    "long": -111.848842
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-111.848842, 40.760012]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF CALIFORNIA, BERKELEY",
+    "SCHOOLID": 6,
+    "lat": 37.871046,
+    "long": -112.250772
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-112.250772, 37.871046]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF CALIFORNIA, BERKELEY",
+    "SCHOOLID": 6,
+    "lat": 37.871046,
+    "long": -112.250772
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-112.250772, 37.871046]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF ARIZONA",
+    "SCHOOLID": 7,
+    "lat": 32.228843,
+    "long": -110.948846
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-110.948846, 32.228843]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF WASHINGTON",
+    "SCHOOLID": 8,
+    "lat": 47.650396,
+    "long": -122.301594
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-122.301594, 47.650396]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "ARIZONA STATE UNIVERSITY",
+    "SCHOOLID": 9,
+    "lat": 33.426459,
+    "long": -111.932574
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-111.932574, 33.426459]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "WASHINGTON STATE UNIVERSITY",
+    "SCHOOLID": 10,
+    "lat": 46.731833,
+    "long": -117.160499
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-117.160499, 46.731833]
+  }
+},
+{ "type": "Feature",
+  "properties": {
+    "NAME": "UNIVERSITY OF OREGON",
+    "SCHOOLID": 11,
+    "lat": 44.058463,
+    "long": -123.068469
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-123.068469, 44.058463]
+  }
+},
+]
+}
