@@ -87,18 +87,6 @@
 },
 { "type": "Feature",
   "properties": {
-    "NAME": "UNIVERSITY OF CALIFORNIA, BERKELEY",
-    "SCHOOLID": 6,
-    "lat": 37.871046,
-    "long": -112.250772
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-112.250772, 37.871046]
-  }
-},
-{ "type": "Feature",
-  "properties": {
     "NAME": "UNIVERSITY OF ARIZONA",
     "SCHOOLID": 7,
     "lat": 32.228843,
