@@ -1,52 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>2019 Oregon State Beavers Football Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Stylesheets-->
-  <!-- Load c3.css -->
-  <link href="/path/to/c3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="css/c3.css" rel="stylesheet">
+  <link href="css/c3.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="css/webslides.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--add favicon for the web page-->
+  <link rel="shortcut icon" href="assets/lgo_ncaa_oregon_state_beavers.ico" type="image/x-icon">
 
   <!--Scripts-->
-  <!-- Load d3.js and c3.js -->
-  <script src="/path/to/d3.v5.min.js" charset="utf-8"></script>
-  <script src="/path/to/c3.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/c3.js"></script>
+  <script src="js/c3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js"></script>
+  <script src="js/webslides.min.js"></script>
+  <script src="js/webslides.js"></script>
+  <script src="https://unpkg.com/leaflet-swoopy"></script>
 </head>
 <body>
   <article id="webslides">
     <!-- Section 1: Title -->
-    <section class="bg-apple", id="section1">
+    <section class="bg-apple">
+      <video class="background-video dark" autoplay muted loop>
+        <source src="assets/osuvideo.mp4" type="video/mp4">
+      </video>
+      <div>
       <h1>Oregon State Beavers Football Preview for 2019</h1>
+    </div>
     </section>
 
-    <!-- Section 2: Roster -->
-    <section>
-      <div id="chart1">
+    <!-- Section 2: Player Count by Grade -->
+    <section class="bg-apple">
+      <h1>Player Count by Academic Year</h1>
+      <div id="chart_grade">
+        <div id="chart_grade"></div>
+      </div>
     </section>
 
-    <!-- Section 3: Map of Players' States -->
-    <section>
-      <div id="map">
+    <!-- Section 3: Player Count by Position -->
+    <section class="bg-apple">
+      <h1>Player Count by Position</h1>
+      <div id="chart_pos">
+        <div id="chart_pos"></div>
+      </div>
     </section>
 
-    <!-- Section 4: 2019 Opponents Map -->
-    <section>
+    <!-- Section 4: Percentage of Quarterbacks by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark" style="background-image:url('https://pamplinmedia.com/images/artimg/00003626009760-0038.jpg')"></span>
+      <div class="wrap", id="chart_qb">
+          <div id="chart_qb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Percentage of Running Backs by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://s3media.247sports.com/Uploads/Assets/428/101/7101428.jpg')"></span>
+      <div class="wrap", id="chart_rb">
+        <div id="chart_rb"></div>
+      </div>
+    </section>
+
+    <!-- Section 6: Percentage of Wide Receivers by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://cdn-s3.si.com/s3fs-public/2014/01/brandin-cooks-nfl-draft-oregon-state.jpg')"></span>
+      <div class="wrap", id="chart_wr">
+        <div id="chart_wr"></div>
+      </div>
+    </section>
+
+    <!-- Section 7: Percentage of Tight Ends by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://pamplinmedia.com/images/artimg/00003464174545.jpg')"></span>
+      <div class="wrap", id="chart_te">
+        <div id="chart_te"></div>
+      </div>
+    </section>
+
+    <!-- Section 8: Percentage of Offensive Linemen by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://osubeavers.com/images/2017/9/5/17_FB_Team_PSU_KM_6_.jpg')"></span>
+      <div class="wrap", id="chart_ol">
+        <div id="chart_ol"></div>
+      </div>
+    </section>
+
+    <!-- Section 9: Percentage of Defensive Linemen by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://s3media.247sports.com/Uploads/Assets/845/526/8526845.jpg')"></span>
+      <div class="wrap", id="chart_dl">
+        <div id="chart_dl"></div>
+      </div>
+    </section>
+
+    <!-- Section 10: Percentage of Linebackers by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://portlandtribune.com/images/artimg/00003490636635.jpg')"></span>
+      <div class="wrap", id="chart_lb">
+        <div id="chart_lb"></div>
+      </div>
+    </section>
+
+    <!-- Section 11: Percentage of Defensive Backs by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://12thmanrising.com/wp-content/uploads/usat-images/2017/02/9706768-ncaa-football-oregon-at-oregon-state.jpeg')"></span>
+      <div class="wrap", id="chart_db">
+        <div id="chart_db"></div>
+      </div>
+    </section>
+
+    <!-- Section 12: Percentage of Long Snappers by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://s3media.247sports.com/Uploads/Assets/630/5/9005630.jpg')"></span>
+      <div class="wrap", id="chart_ls">
+        <div id="chart_ls"></div>
+      </div>
+    </section>
+
+    <!-- Section 13: Percentage of Punters by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('http://media.oregonlive.com/behindbeaversbeat/photo/try-again-hekkerjpg-dc567c79f5764e6e.jpg')"></span>
+      <div class="wrap", id="chart_p">
+        <div id="chart_p"></div>
+      </div>
+    </section>
+
+    <!-- Section 14: Percentage of Kickers by Grade -->
+    <section class="bg-apple dark">
+      <span class="background dark", style="background-image:url('https://fansided.com/wp-content/blogs.dir/229/files/2013/11/7768688.jpg')"></span>
+      <div class="wrap", id="chart_k">
+        <div id="chart_k"></div>
+      </div>
+    </section>
+
+    <!-- Section 15: Map of Players' States -->
+    <section class="bg-apple">
+      <div id="map1"></div>
+    </section>
+
+    <!-- Section 16: 2019 Opponents Map -->
+    <section class="bg-apple">
       <div id="map2">
     </section>
 
-    <!-- Section 5: Strength of Schedule/Miles Traveled -->
-    <section>
-      <div id="chart"></div>
+    <!-- Section 17: Strength of Schedule/Miles Traveled -->
+    <section class="bg-apple">
+      <h1>2019 Schedule by Miles to Travel/Preseason Opponent Rank</h1>
+      <div id="chart1">
+        <div id="chart1"></div>
+      </div>
     </section>
 
-    <!-- Section 6: Results of last few years (PPG, W/Ls) -->
-    <section>
-      <div id="chart2"></div>
+    <!-- Section 18: Pac 12 Wins (2013-2018) -->
+    <section class="bg-apple">
+      <h1>Pac 12 Wins (2013-2018)</h1>
+      <div id="chart2">
+        <div id="chart2"></div>
+      </div>
     </section>
 
-    <!-- Section 7: Works Cited -->
-    <section>
-
+    <!-- Section 19: 2018 Beavers Points Per Game -->
+    <section class="bg-apple">
+      <h1>2018 Points Per Game</h1>
+      <div id="chart3">
+        <div id="chart3"></div>
+      </div>
     </section>
 
-    <!-- Section 7: Season Predictions (MAYBE) -->
+  </article>
+  <script src="js/script.js"></script>
 </body>
 </html>
