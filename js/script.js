@@ -87,7 +87,10 @@ var map1 = L.map('map1', {
   detectRetina: true
 });
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  minZoom: 4,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map1);
 
 //Chloropleth Map of States
 var colors1 = chroma.scale('YlOrRd').colors(8); //sets scale of states from light to dark
@@ -149,7 +152,10 @@ var map2 = L.map('map2', {
   detectRetina: true
 });
 
-L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map2);
+L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
+  minZoom: 4,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+}).addTo(map2);
 
 //arrows and markers added to map
 new L.marker([44.559582, -123.281426], {icon: beavsIcon}).addTo(map2);
@@ -767,9 +773,6 @@ ws.el.addEventListener('ws:slide-change', function() {
             scored: "#DC4405",
             allowed: "#FFFFFF"
           },
-          axes: {
-            allowed: 'y2'
-          },
           types: {
             scored: 'bar',
             allowed: 'bar'
@@ -788,7 +791,7 @@ ws.el.addEventListener('ws:slide-change', function() {
               text: 'Points',
               position: 'outer-middle'
             }
-          }
+          },
         }
     });
   }
