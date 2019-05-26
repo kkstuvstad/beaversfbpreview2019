@@ -16,6 +16,7 @@ This project gives a brief overview of the Oregon State Beavers' football season
 * Team Color Codes, https://teamcolorcodes.com/ncaa-color-codes/pac-12-colors/; Oregon State Beavers Color Codes, https://teamcolorcodes.com/oregon-state-beavers-color-codes/
 * Swoopy Arrows for Leaflet Maps, https://blog.webkid.io/swoopy-arrows-for-leaflet-maps/
 * US States GeoJSON, Mike Bostock, https://bost.ocks.org/mike/
+* C3 Files, kt3k, GitHub, https://github.com/c3js/c3/releases/tag/v0.7.0
 ### Images
 * OSU Quarterback Jake Luton, https://pamplinmedia.com/images/artimg/00003626009760-0038.jpg
 * OSU Running Back Steven Jackson, https://s3media.247sports.com/Uploads/Assets/428/101/7101428.jpg
