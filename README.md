@@ -8,7 +8,7 @@ This project gives a brief overview of the Oregon State Beavers' football season
 * The Return: Oregon State vs. Southern Utah Highlights, YouTube, https://www.youtube.com/watch?v=pl0z_tFo8No
 * 2019 Oregon State Beavers Football Roster, https://osubeavers.com/roster.aspx?roster=182&path=football (data recorded before most recent update)
 * College Football Rankings (CBS Sports 129), CBS Sports, https://www.cbssports.com/college-football/rankings/cbs-sports-ranking/
-* C3 Sources: Getting Started, https://c3js.org/gettingstarted.html#setup; Pie Chart, https://c3js.org/samples/chart_pie.html; Rotate X Axis Tick Text, https://c3js.org/samples/axes_x_tick_rotate.html; Reference, https://c3js.org/reference.html;
+* C3 Sources: Getting Started, https://c3js.org/gettingstarted.html#setup; Pie Chart, https://c3js.org/samples/chart_pie.html; Rotate X Axis Tick Text, https://c3js.org/samples/axes_x_tick_rotate.html; Reference, https://c3js.org/reference.html; Adding a Title, https://stackoverflow.com/questions/28667688/how-can-i-add-a-title-to-c3-js-chart;
 * Pac-12 Football Standings, https://pac-12.com/football/standings
 * Oregon State 2018 Schedule, https://pac-12.com/oregon-state-football/schedule
 * Distances from Oregon State University to opponent locations measured using Google Maps
